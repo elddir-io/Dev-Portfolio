@@ -1,0 +1,120 @@
+.sec3 {
+    background-image: radial-gradient(
+        farthest-side at 100% 50%,
+        #f5ebe6,
+        #367f9d,
+        #092936
+      );
+    height: 100vh;
+}
+
+.project-boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-columns: auto; */
+    /* grid-template-rows: auto; */
+    
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; */
+ }
+  
+  .card {
+    max-height: auto;
+    max-width: auto;     
+    box-shadow: var(--shadow);
+    object-fit: contain;
+    padding: 1.5em;
+    margin-top: 10em;  /* was 100px*/
+    /* margin-bottom: 5; */
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .card {
+    transition: transform 0.2s;    
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+
+  .badge {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    
+    /* max-height: 75px; */
+    /* max-width: 75px; */
+    /* margin-top: 1rem; */
+    /* border-radius: 5px; */
+  }
+
+/* ====================================================== */
+/*                       Animations                       */
+/* ====================================================== */
+
+
+
+
+
+
+/* ====================================================== */
+/*                      Media Queires                     */
+/* ====================================================== */
+
+@media (min-width: 940px) {
+    .card:hover {
+      transform: scale(1.01);
+      box-shadow: 0 16px 16px 0 rgba(245, 235, 230, 0.5);
+      box-shadow: 0 16px 16px 0 #fd620f;
+    }
+  }
+
+/* @media (max-width: 940px) {
+    .project-boxes {
+      flex-direction: row;
+       justify-content: center; 
+    }
+  } */
+@media (max-width: 568px) {
+    .project-boxes {
+      display: grid;
+      /* align-items: center;  */
+      justify-items: center;
+      margin-top: 50px;
+      min-width: 400px;
+      /* justify-content: center; */
+    }
+  }
+
+
+
+  
+  
+@media (max-width: 568px) {
+    .card {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .card {
+      margin-top: 1rem;
+      max-height: 500px;
+      max-width: 300px;
+    }
+  }
+
+  
+  
+ 
+ 
+  
+
+  

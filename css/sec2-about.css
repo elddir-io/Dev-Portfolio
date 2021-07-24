@@ -1,0 +1,60 @@
+.sec2 {
+    background-image: radial-gradient(
+        farthest-side at -20% 50%,
+        #f5ebe6,
+        #367f9d,
+        #092936
+      );
+    height: 100vh;
+    width: 100%;
+    display:grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.bio {    
+    height: 100%;
+    width: 100%;
+    /* align-content: center;  */
+    /* margin: 40px;  */
+}
+
+.bio h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+.bio p {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+/* ====================================================== */
+/*                       Animations                       */
+/* ====================================================== */
+
+/* .bio {
+    animation: bio 4s ease;
+    animation-fill-mode: forwards;
+  }
+  @keyframes bio {
+    from {
+      transform: translateX(-400px);     
+    }    
+    to {
+      color: var(--light);
+      transform: translateX();
+    }
+  } */
+
+/* ====================================================== */
+/*                      Media Queires                     */
+/* ====================================================== */
+
+@media (max-width: 568px) {
+    .bio {
+      margin-left: 0px;
+      margin-right: 0px;
+      max-width: 400px;
+    }
+  }
